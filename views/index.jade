@@ -1,0 +1,11 @@
+h1= title
+p Welcome to #{title}
+div
+  label Long URL:
+  form(method='post', action='/')
+    input(name="long_url")
+    input(type='submit', value='Make it Short!')
+div
+  a(href=short_url)
+    =short_url
+
